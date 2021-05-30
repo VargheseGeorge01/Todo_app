@@ -32,6 +32,8 @@ class TaskDeleteView(DeleteView):
     model=Task
     template_name = 'delete.html'
     success_url = reverse_lazy('cbvtask')
+    
+#View using function.
 
 def task_view(request):
     obj1=Task.objects.all()
